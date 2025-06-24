@@ -156,13 +156,12 @@
                                 <a href="#" class="nav_trigger"><span></span></a>
                             </span>
                             <ul id="navy" class="clearfix">
-                                <li class="normal_menu mobile_menu_toggle ">
-                                    <a href="/"><span style="color: #002E8A;">Home</span></a>
+                                <li class="has_mega_menu mobile_menu_toggle current_page_item">
+                                    <a href=""><span class="activeNavBoxSpan"><p class="activeNavBox">Home</p></span></a>
                                 </li>
 
-                                <li class="has_mega_menu mobile_menu_toggle current_page_item">
-                                    <a href=""><span class="activeNavBoxSpan">
-                                            <p class="activeNavBox" style="margin-bottom: 0;">Services</p>
+                                <li class="has_mega_menu mobile_menu_toggle">
+                                    <a href="#"><span style="color: #002E8A;">Services
                                         </span></a>
                                     <ul class="mega_menu" style="height: 30vh; max-width: fit-content;left: 43%;box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.2),
                 4px 0 8px rgba(0, 0, 0, 0.2);     ">
@@ -1075,144 +1074,463 @@
 
 
 
-            <!-- newform design -->
-            <section class="formNew1" id="form-container1">
+            <section class="footer" >
 
-                <div class="formL">
-                    <h2>Thinking about your next project?</h2>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>footer</title>
+                <style>
+                    .footer-section{
+                        width: 98vw;
+                        max-width: 1400px;
+                    }
+                    .list-items a{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .list-items a:hover{
+                        text-decoration: none !important;
+                        color: black !important;
+                        font-weight: 400;
+                    }
+                    .contact-btn a{
+                        text-decoration: none;
+                        font-size: 10rem !important;
+                        font-weight: 600;
+                        color: white !important;
+                    }
+                    .contact-btn:hover{
+                        background-color: #0e4bdb;
+                    }
+                    .footer-parent-container{
+                        position: relative;
+                        height: 5vh;
+                        width: 100vh;
+                        padding-bottom: none;
+                        margin-bottom: none;
+                    }
+                    .footer-purple-container{
+                        z-index:2;
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        height: 42.5vh;
+                        width: 60.5vw;
+                        background-color: #14166C;
+                        border-radius: 2rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-left: 37.5%;
+                        margin-top: 0vh;
+                        gap: 2vw;
+                    }
+                    .footer-tagline-1{
+                        margin-top: 3.5vh;
+                        font-size: 2.15rem;
+                        font-weight: 550;
+                        color: #0B4CB8;
+                    }
+                    .footer-tagline-2{
+                        color: white;
+                        font-size: 2.15rem;
+                        font-weight: 500;
+                        margin-top: -5vh;
+                    }
+                    .footer-subtitle{
+                        margin-top: 3.5vh;
+                        color: white;
+                        font-size: 1.35rem;
+                        font-weight: 200;
+                    }
+                    .footer-text-section h5{
+                        color: white;
+                        font-size: 1.25rem;
+                        margin-top: 1vw;
+                    }
+                    .contact-btn{
+                        margin-top: -25vh;
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        border: none;
+                        border-radius: 3rem;
+                        width: 8vw;
+                        height: 8vh;
+                        background-color: #658DE9;
+                    }
+                    .footer-white-container{
+                        box-shadow: 4px 6px 20px rgba(0,0,0,0.3);
+                        z-index: 1;
+                        font-family: "Plus Jakarta Sans", sans-serif !important;
+                        width: 92.5vw;
+                        font-size: 1.5rem;
+                        margin-top: 7.5%;
+                        margin-left: 3vw;
+                        height: 66vh;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        border-radius: 2rem;
+                        margin-bottom: none;
+                    }
+                    .footer-row-1{
+                        height: 90vh;
+                        padding-bottom: 0.5vh;
+                        margin-top: 26vh;
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        width: 100%;
+                        justify-content: space-around;
+                        border-bottom: 1px solid rgb(184, 182, 182);
+                    }
+                    .footer-side-2{
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        margin-left: 3vw;
+                        gap: 2.5vw;
+                    }
+                    .footer-col-2-1{
+                        color: #5c5b5b;
+                        margin-left: 1vw;
+                    }
+                    ul{
+                        list-style-type: none;
+                    }
+                    li{
+                        color: #5c5b5b !important;
+                    }
+                    .footer-list-title{
+                        color: #000552 !important;
+                        font-weight: 600;
+                    }
+                    .footer-row-2{
+                        color: #5c5b5b !important;
+                        margin-top: 3vh;
+                        margin-left: -4.5vw;
+                        width: 92.5vw;
+                        height: 10vh;
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        justify-content: space-around;
+                        gap: 5vw;
+                    }
+                    .footer-side-1{
+                        margin-left: 5%;
+                    }
+                    .footer-icon-image{
+                        height: 35vh;
+                        width: 21.5vw;
+                        margin-top: 5vh;
+                        margin-left: -2.5vw;
+                        padding: 1rem;
 
-                    <div class="formLsub">
-                        <img src="images/newform/office address.webp" alt="" class="imgFormIcon">
-                        <div>
-                            <h4>Office Address</h4>
-                            <h5>No.813, 6th-floor Nizara Bonanza, Opp LIC Building, Anna Salai, Chennai, <br>Tamil Nadu
-                                - 600002</h5>
+                    }
+                    .footer-col-2-2{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .footer-col-2-3{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .footer-col-2-4{
+                        display: inline-block;
+                    }
+                    .footer-detail-1{
+                        margin-top: -12.5%;
+                        margin-left: 15%;
+                    }
+                    .footer-detail-2{
+                        margin-top: -12.5%;
+                        margin-left: 15%;
+                    }
+                    .footer-social-media-links{
+                        display: flex;
+                        gap: 1.5vw;
+                    }
+                    @media (max-width: 1150px) and (min-width: 768px){
+                        .footer-parent-container{
+                            position: relative;
+                            height: 5vh;
+                            width: 97.5vw;
+                        }
+                        .footer-white-container{
+                            font-size: 1.3rem;
+                            width: 94vw;
+                            height: 97.5vh;
+                        }
+                        .footer-purple-container{
+                            margin-left: 15vw;
+                            height: 45vh;
+                            width: 67.5vw;
+                            gap: 17.5vw;
+                        }
+                        .footer-icon-section{
+                            height: 40vh;
+                            width: 25vw;
+                            margin-top: 0vh;
+                            margin-left: 7.5vw;
+                        }
+                        .footer-icon-image{
+                            padding: 1rem;
+                            margin-left: -2.5vw;
+                            margin-top: 6.5vh;
+                            height: 33vh;
+                        }
+                        .footer-text-section{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            margin-left: -18.5vw;
+                            margin-top: 1vh;
+                            padding: 0.5rem;
+                        }
+                        .contact-btn{
+                            margin-top: -3vh;
+                            width: 11vw;
+                            height: 8.5vh;
+                        }
+                        .footer-row-1{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-top: 32.5vh;
+                        }
+                        .footer-row-2{
+                            margin-top: 0.5vh;
+                            margin-left: -3.5vw;
+                            gap: 7.5vw;
+                        }
+                        .footer-tagline-1{
+                            font-size: 1.8rem;
+                            margin-top: 1vh;
+                        }
+                        .footer-tagline-2{
+                            font-size: 1.8rem;
+                            margin-top: -5vh;
+                        }
+                        .contact-btn a{
+                            font-size: 0.7rem;
+                        }
+                        .footer-subtitle{
+                            font-size: 1.2rem;
+                            margin-top: -1.5vh;
+                        }
+                        .footer-side-2{
+                            display: flex;
+                            flex-direction: row;
+                            flex: 1;
+                            justify-content: space-between;
+                            gap: 12.5rem;
+                            margin-left: -2vw;
+                            margin-top: 5vh;
+                        }
+                        .footer-side-1{
+                            display: flex;
+                            flex-direction: column ;
+                            justify-content: center;
+                            margin-top: -2.5vh;
+                            margin-left: -1.5vw;
+                            padding: 1rem;
+                        }
+                        .footer-col-2-1{
+                            text-align: center;
+                        }
+                        .footer-social-media-links{
+                            display: flex;
+                            gap: 1.5vw;
+                            justify-content: center;
+                            margin-left: -4vw;
+                            margin-top: -2.5vh;
+                        }
+
+                    }
+                    @media (max-width:768px) and (min-width:320px){
+                        .footer-parent-container{
+                            position: relative;
+                            height: 15vh;
+                            width: 100vw;
+                        }
+                        .footer-white-container{
+                            font-size: 1.15rem;
+                            width: 92.5vw;
+                            height: 100vh;
+                        }
+                        .footer-purple-container{
+                            margin-left: 17.5vw;
+                            height: 55vh;
+                            width: 65vw;
+                            gap: 17.5vw;
+                        }
+                        .footer-icon-section{
+                            height: 25vh;
+                            width: 20vw;
+                            margin-top: 0vh;
+                            margin-left: 7.5vw;
+                        }
+                        .footer-icon-image{
+                            padding: 1rem;
+                            margin-left: -5vw;
+                            margin-top: 6.5vh;
+                            height: 25vh;
+                        }
+                        .footer-text-section{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            margin-left: -20vw;
+                            margin-top: 2.5vh;
+                            padding: 0.35rem;
+                        }
+                        .contact-btn{
+                            margin-top: -2vh;
+                            width: 15vw;
+                            height: 6.5vh;
+                        }
+                        .footer-row-1{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-top: 40vh;
+                        }
+                        .footer-row-2{
+                            margin-top: 3vh;
+                            margin-left: -2.5vw;
+                        }
+                        .footer-tagline-1{
+                            font-size: 1.6rem;
+                            margin-top: 3.5vh;
+                        }
+                        .footer-tagline-2{
+                            font-size: 1.6rem;
+                            margin-top: -5vh;
+                        }
+                        .contact-btn a{
+                            font-size: 0.50rem;
+                        }
+                        .footer-subtitle{
+                            font-size: 1.2rem;
+                            margin-top: 1vh;
+                        }
+                        .footer-side-2{
+                            display: flex;
+                            flex-direction: row;
+                            flex: 1;
+                            justify-content: space-between;
+                            gap: 3rem;
+                            margin-left: -2vw;
+                            margin-top: 3.5vh;
+                        }
+                        .footer-side-1{
+                            display: flex;
+                            flex-direction: column ;
+                            justify-content: center;
+                            margin-top: -2.5vh;
+                            margin-left: -1.5vw;
+                            padding: 0.75rem;
+                        }
+                        .footer-col-2-1{
+                            text-align: center;
+                        }
+                        .footer-social-media-links{
+                            display: flex;
+                            gap: 1.5vw;
+                            justify-content: center;
+                            margin-left: -4vw;
+                        }
+                    }
+                </style>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+            </head>
+
+            <body class="footer-section">
+                <div class="footer-parent-container">
+                    <div class="footer-purple-container">
+                        <div class="footer-icon-section">
+                            <img class="footer-icon-image" src="./colorful-logo.png" alt="colorful icon" />
+                        </div>
+                        <div class="footer-text-section">
+                            <p class="footer-tagline-1">Let’s Work Together !</p>
+                            <br />
+                            <p class="footer-tagline-2">Have a project in mind? Let’s build<br />something great together.</p>
+                            <br />
+                            <button type="button" class="contact-btn"><span><a href="./contact-us.html"><h5>Contact Us</h5></a></span></button>
+                            <br />
+                            <p class="footer-subtitle">Start a conversation with our experts and discover how<br />our AI-powered solutions can transform your business.</p>
                         </div>
                     </div>
-                    <div class="formLsub">
-                        <img src="images/newform/Phone.webp" alt="" class="imgFormIcon">
-                        <div>
-                            <h4>Phone</h4>
-                            <h5>+91 95008 66462</h5>
-                        </div>
                     </div>
-                    <div class="formLsub">
-                        <img src="images/newform/mail.webp" alt="" class="imgFormIcon">
-                        <div>
-                            <h4>Email</h4>
-                            <h5>sales@ethicalintelligent.com</h5>
-                        </div>
-                    </div>
-                    <div class="formLsub">
-                        <img src="images/newform/Business Hrs (1).webp" alt="" class="imgFormIcon">
-                        <div>
-                            <h4>Business Hours</h4>
-                            <h5>Monday to Friday <br> 9 AM - 8 PM IST</h5>
-                        </div>
+                    <div class="footer-white-container">
+                            <div class="footer-row-1">
+                                <div class="footer-side-1">
+                                    <div class="footer-col-2-1">
+                                        <img src="./Eit Logo.png" alt="logo of company" />
+                                        <br />
+                                        <p>Empowering businesses through Ethical and Intelligent IT,<br />IOT, and AI-driven digital solutions.</p>
+                                        <br />
+                                        <div class="footer-social-media-links">
+                                            <span><a href="https://www.facebook.com/ethicalintelligent"><img src="./Frame 1.png" alt="Facebook logo" /></a></span>
+                                            <span><a href="https://www.instagram.com/ethicalintelligent_/"><img src="./Frame 2.png" alt="Instagram logo" /></a></span>
+                                            <span><a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true"><img src="./Frame 3-new.png" alt="Linkedin logo" /></a></span>
+                                            <span><a href="https://x.com/EITechnologies_"><img src="./Frame 4.png" alt="Twitter logo" /></a></span>
+                                            <span><a href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/"><img src="./Frame 5.png" alt="Pinterest logo" /></a></span>
+                                            <span><a href="https://www.youtube.com/@eitworks"><img src="./Frame 6.png" alt="YouTube logo" /></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-side-2">
+                                    <div class="footer-col-2-2">
+                                        <ul>
+                                            <li><p class="footer-list-title">Company</p></li>
+                                            <li class="list-items"><span><a href="./about-us.html"><p>About Us</p></a></span></li>
+                                            <li class="list-items"><span><a href="./clients.html"><p>Clients</p></a></span></li>
+                                            <li class="list-items"><span><a href="./career"><p>Careers</p></a></span></li>
+                                            <li class="list-items"><span><a href="https://ethicalintelligent.com/blogs"><p>Blogs</p></a></span></li>
+                                        <ul>
+                                    </div>
+                                    <div class="footer-col-2-3">
+                                        <ul>
+                                            <li><p class="footer-list-title">Solutions</p></li>
+                                            <li class="list-items"><span><a href="./it-services.html"><p>IT Services</p></a></span></li>
+                                            <li class="list-items"><span><a href="./iot-services.html"><p>IOT</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI-office-automation" ><p>AI Office Automation</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI-Business-analytics" ><p>AI Business Analytics</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI no-code/low-code" ><p>AI no-code/low-code</p></a></span></li>
+                                        <ul>
+                                    </div>
+                                    <div class="footer-col-2-4">
+                                        <ul>
+                                            <li><p class="footer-list-title">Contact</p></li>
+                                            <li><img class="symbol-img" src="./clock.png" alt="icon of a clock" /><p class="footer-detail-1">Monday to Friday<br />9 AM - 8 PM IST</p></li>
+                                            <br />
+                                            <li><img class="symbol-img" src="./symbol.png" alt="icon of symbol" /><p class="footer-detail-2">sales@ethicalintelligent.com</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-row-2">
+                                <p class="footer-copyright">@2025AllRightsReserved<p>
+                                <p class="footer-policy-tag">Privacy Policy</p>
+                            </div>
                     </div>
                 </div>
-                <div class="formM">
+            </body>
+        </html>
 
-                    <form action="https://formsubmit.co/ethicalintelligentclients@gmail.com" method="POST"
-                        id="contact-form">
-                        <h2 class="sayHello">Say Hello</h2>
-                        <h5>Hello there, my name is </h5>
-                        <input type="text" name="name" placeholder="Enter Your Name" class="fullInput" required>
-
-                        <h5>and I'm looking for a team to help me with</h5>
-                        <input type="message" placeholder="Give a short description" class="fullInput" required>
-
-
-                        <div class="mobInputDiv">
-                            <input type="text" name="country_code" class="mobInput" placeholder="Country code" required>
-                            <input type="number" name="mobile_number" class="mobInput" placeholder="Mobile number"
-                                required>
-                        </div>
-
-                        <div style="display: flex;">
-                            <h5>you can reach me at</h5>
-                            <input type="email" name="email" placeholder="your mail" class="halfInput" required>
-                            <button type="submit">Send</button>
-                        </div>
-
-                        <input type="hidden" name="_next" value="https://ethicalintelligent.com/thankyoupage.html">
-                        <input type="hidden" name="_captcha" value="false">
-                    </form>
-                </div>
-                <div class="formR">
-                    <h2 class="needPres">Need a Presentation?</h2>
-                    <h5 class="marginFormR">
-                        Do you like what we do? Want to share it with your team? Now it’s easy! Contact us for a
-                        presentation, and we’ll walk you through everything you need to know!
-                    </h5>
-
-                    <h5 class="marginFormR">Get in touch to learn more! &nbsp; &nbsp;
-                        <!-- <img src="images/newform/pc.webp" alt="" class="imgPcMob"> &nbsp; PC &nbsp;
-                        <img src="images/newform/Mobile.webp" alt="" class="imgPcMob"> &nbsp; Mobile -->
-                    </h5>
-
-                    <div style="display: flex;" class="marginFormR">
-
-                        <a href="https://www.facebook.com/ethicalintelligent" target="_blank">
-                            <img src="images/newform/f.webp" alt="" class="imgFormIcon">
-                        </a>
-
-                        <a href="https://www.instagram.com/ethicalintelligent_/" target="_blank">
-                            <img src="images/newform/i.webp" alt="" class="imgFormIcon">
-                        </a>
-
-                        <a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true"
-                            target="_blank">
-                            <img src="images/newform/in.webp" alt="" class="imgFormIcon">
-                        </a>
-
-                        <a href="https://x.com/EITechnologies_"
-                            target="_blank">
-                            <img src="images/newform/x white .webp" alt="TwitterX" class="imgFormIcon"></a>
-
-                        <a href="https://in.pinterest.com/EthicalIntelligentTechnologies/_created/" target="_blank">
-                            <img src="images/newform/p.webp" alt="" class="imgFormIcon">
-                        </a>
-
-                        <a href="https://www.youtube.com/@eitworks">
-                            <img src="images/newform/y (1).webp" alt="" class="imgFormIcon" target="_blank">
-                        </a>
-
-                    </div>
-                    <div style="display: flex;justify-content: space-around;">
-                        <span><a href="/index.html">
-                                <h5>Home</h5>
-                            </a></span>
-                        <span class="divider"></span>
-                        <span><a href="/it-services.html">
-                                <h5>IT Services</h5>
-                            </a></span>
-                        <span class="divider"></span>
-                        <span><a href="/iot-services.html">
-                                <h5>IOT Services</h5>
-                            </a></span>
-                        <span class="divider"></span>
-                        <span><a href="/about-us.html">
-                                <h5>About</h5>
-                            </a></span>
-                        <span class="divider"></span>
-                        <span><a href="/contact-us.html">
-                                <h5>Contact</h5>
-                            </a></span>
-                    </div>
-                </div>
             </section>
 
-            <section class="secfoot">
-                <div>
-                    <div>
-                        <h5>@2024 All Rights Reserved</h5>
-                    </div>
-                    <div>
-                        <h5>Ethical Intelligent Technologies</h5>
-                    </div>
-                </div>
-            </section>
 
 
         </main>
